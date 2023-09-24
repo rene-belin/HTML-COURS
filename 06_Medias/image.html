@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML5 - Media image</title>
+  </head>
+  <body>
+    <!-- image avec ces dimensions et attributs -->
+    <img
+      src="logo_windows.jpg"
+      width="255"
+      height="255"
+      alt="Logo Windows"
+      title="Logo Windows"
+      usemap="#planetmap"
+    />
+    <!-- coordonnée des rectangles et renvoie vers un lien externe -->
+    <map name="planetmap">
+      <!-- forme & coordonnée de la zone -->
+      <area
+        shape="rect"
+        coords="0,0,108,108"
+        href="https://www.w3schools.com/tags/tag_map.asp"
+        alt="W3Schools"
+      />
+      <area
+        shape="rect"
+        coords="118,0,225,108"
+        href="https://google.fr"
+        alt="Google"
+      />
+      <area
+        shape="rect"
+        coords="0,120,108,225"
+        href="https://www.afpa.fr "
+        alt="Afpa"
+      />
+      <area
+        shape="rect"
+        coords="118,118,225,225"
+        href="https://validator.w3.org"
+        alt="orange"
+      />
+    </map>
+    <!-- légende de l'illustration' -->
+    <figure>
+      <figcaption>Logo de la société Windows</figcaption>
+    </figure>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 - Formulaire</title>
+</head>
+<body>
+    <form action="http://bienvu.net/script.php" method="post">
+        <h1>Nous lançons une grande enquête sur les anciens stagiaires</h1>
+        <h4>merci de nous répondre</h4>
+        <!-- grouper les champs - vos coordonnées-->
+        <fieldset>
+            <!-- permet de guider l'internaute) -->
+            <legend>Vos coordonnées</legend>
+            <label for="nom">votre nom</label>
+            <input type="text" name="nom"><br>
+            <label for="prenom">votre prénom</label>
+            <input type="text" name="prenom"><br>
+            <label for="dateNaissance">votre date de naissance</label>
+            <input type="text" name="dateNaissance"><br>
+            <label for="adresse">votre adresse</label>
+            <input type="text" name="adresse"><br>
+            <label for="ville">votre ville</label>
+            <input type="text" name="ville"><br>
+            <label for="codePostal">votre code postal</label>
+            <input type="text" name="codePostal"><br>
+            <label for="email">votre e-mail</label>
+            <input type="text" name="email"><br>
+        </fieldset>
+        <!-- fin des champs grouper - cordonnées -->
+  
+        <fieldset>
+            <legend></legend>
+            <!-- bouton type radio -->
+            <input type="radio" name="couleur" value="Rouge"> vous êtes un homme
+            <input type="radio" name="couleur" value="Vert" checked="checked"> vous êtes une femme
+        </fieldset>
+        <!-- champ imbriqué sans légende -->
+        <!-- liste déroulante -->
+        <select name="specialite">
+            <option value="developpeur" selected>developpeur</option>
+            <option value="graphiste">graphiste</option>
+            <option value="designer">designer</option>
+        </select>
+        <!-- fin liste déroulante -->
+        <br>
+        <!-- autre -->
+        <label for="">si vous avez répondu autre, précisez</label>
+        <input type="text" name="autre"><br>
+        <!-- liste déroulante -->
+        <select name="couleur">
+            <option value="1000" selected><1000 €</option>
+            <option value="2000"><2000 €</option>
+            <option value="3000"><3000 €</option>
+        </select><br>
+        <!-- fin liste déroulante -->
+        <label for="">en quelle année avez-vous suivi le stage afpa ?</label>
+        <input type="text" name="quelleAnnee"><br><br>
+        <!-- commentaires -->
+        <textarea name="commentaires" id="" cols="30" rows="3" placeholder="vos commentaires"></textarea>
+        <h3>merci d'avoir répondu au questionnaire</h3>
+        <!-- bouton valider & annuler -->
+        <input type="submit" value="valider"> <input type="submit" value="annulez">
+    </form>
+</body>
+
+</html>
